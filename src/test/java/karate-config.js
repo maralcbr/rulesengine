@@ -7,7 +7,7 @@ function fn() {
     protocol = 'https';
     karate.configure('ssl', true);
   }
-  var config = { demoBaseUrl: protocol + '://127.0.0.1:' + port };
+  var config = { localBaseUrl: protocol + '://127.0.0.1:' + port };
   if (karate.env !== 'mock') {
     // karate.configure('callSingleCache', { minutes: 1 });
     // 'callSingle' is guaranteed to run only once even across all threads
